@@ -1,1 +1,9 @@
-<h1>Home Page</h1>
+<ul>
+    <li ng-repeat="message in messages">{{ message.text }}
+    <input ng-model="message.text" ng-change="messages.$save(message)" />
+    <button ng-click="messages.$remove(message)">Delete Message</button></li>
+</ul>
+<form ng-submit="addMessage()">
+    <input ng-model="newMessageText" />
+    <button type="submit">Add Message</button>
+</form>
