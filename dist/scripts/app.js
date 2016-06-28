@@ -7,13 +7,28 @@ app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', functio
             requireBase: false
         });
     
-    $urlRouterProvider.otherwise("/");
+    $urlRouterProvider.otherwise("/home");
     
     $stateProvider
         .state('home', {
             url: '/home',
             controller: 'HomeCtrl',
             templateUrl: '/templates/home.html'
+        })
+        .state('skills', {
+            url: '/skills',
+            controller: 'SkillsCtrl',
+            templateUrl: '/templates/skills.html'
+        })
+        .state('inspiration', {
+            url: '/inspiration',
+            controller: 'InspirationCtrl',
+            templateUrl: '/templates/inspiration.html'
+        })
+        .state('contact', {
+            url: '/contact',
+            controller: 'ContactCtrl',
+            templateUrl: '/templates/contact.html'
         });
 }]);
 
@@ -36,4 +51,16 @@ app.controller("HomeCtrl", function($scope, $firebaseArray, $firebaseAuth) {
             text: $scope.newMessageText
         });
     };
+});
+
+app.controller("SkillsCtrl", function($scope) {
+    
+});
+
+app.controller("InspirationCtrl", function($scope) {
+    
+});
+
+app.controller("ContactCtrl", function($scope) {
+    
 });

@@ -1,3 +1,5 @@
+<h3>Add a message</h3>
+<br>
 <ul>
     <li ng-repeat="message in messages">{{ message.text }}
     <input ng-model="message.text" ng-change="messages.$save(message)" />
