@@ -12,6 +12,12 @@
     padding: 60px 50px;
 }
 
+@media screen and (min-width: 768px) {
+    .glyphicon-signal {
+        float: right;
+    }
+}
+
 .bg-grey {
     background-color: #cccccc;
     color: white;
@@ -25,17 +31,12 @@
 .logo {
     color: #339933;
     font-size: 200px;
-    padding-left: 50px;
 }
 @media screen and (max-width: 768px) {
     .col-sm-4 {
         text-align: center;
         margin: 25px 0px;
     }
-}
-
-.pad-left {
-    padding-left: 100px;
 }
 
 .bg-green {
