@@ -15,6 +15,11 @@ app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', functio
             controller: 'HomeCtrl',
             templateUrl: '/templates/home.html'
         })
+        .state('about', {
+            url: '/about',
+            controller: 'AboutCtrl',
+            templateUrl: '/templates/about.html'
+        })
         .state('skills', {
             url: '/skills',
             controller: 'SkillsCtrl',
@@ -51,6 +56,10 @@ app.controller("HomeCtrl", function($scope, $firebaseArray, $firebaseAuth) {
             text: $scope.newMessageText
         });
     };
+});
+
+app.controller("AboutCtrl", function($scope) {
+    
 });
 
 app.controller("SkillsCtrl", function($scope) {
