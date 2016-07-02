@@ -74,6 +74,17 @@ app.controller("HomeCtrl", function($scope, $firebaseArray, $firebaseAuth) {
       });
     })
     
+    $(window).scroll(function() {
+      $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+      });
+    });
+    
     var ref = new Firebase("https://embolden.firebaseio.com/messages");
     
     $scope.messages = $firebaseArray(ref);
