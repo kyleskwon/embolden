@@ -22,7 +22,7 @@ h4 {
 
 .navbar {
     margin-bottom: 0;
-    background-color: #400080;
+    background-color: darkblue;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -74,7 +74,7 @@ h4 {
 }
 
 .logo {
-    color: #339933;
+    color: navy;
     font-size: 200px;
 }
 @media screen and (max-width: 768px) {
@@ -132,7 +132,7 @@ h4 {
 }
 
 .panel {
-    border: 1px solid #f4511e;
+    border: 1px solid blue;
     border-radius: 0;
     transition: box-shadow 0.5s;
 }
@@ -149,7 +149,7 @@ h4 {
 
 .panel-heading {
     color: #fff !important;
-    background-color: #f4511e !important;
+    background-color: navy !important;
     padding: 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
